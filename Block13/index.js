@@ -23,9 +23,9 @@ function convertToCelsius(fahren) {
  *   < 100  |  "hot"
  *
  * @param {} fahren
- * @param {} celc
+ * @param {} _celc
  */
-function createMessage(fahren, celc) {
+function createMessage(fahren, _celc) {
   let message = ""
 
   if (fahren < 32){
@@ -38,11 +38,11 @@ function createMessage(fahren, celc) {
   else if (fahren < 86) {
     message = "warm"
   }
-  else if (faren < 102) {
+  else if (fahren < 102) {
     message = "hot"
   }
 
-  return 'The temperature is ${fahren}F ${celc}C and it feels ${message}'
+  return `The temperature is ${fahren}F ${celc}C and it feels ${message}`;
   
 }
 
